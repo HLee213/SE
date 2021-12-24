@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Index</title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <% include ./models/bs_css.ejs%>
   </head>
   <body>
-    <h1><%= username %></h1>
-    <p>Welcome to <%= title %></p>
+    <% include ./navbar.ejs%>
+    <h1>Hi ， <%= title %></h1>
+    <h1><%= title %></h1>
+    <% include ./models/bs_js.ejs%>
+    
   </body>
 </html>
